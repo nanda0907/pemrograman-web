@@ -1,0 +1,161 @@
+/* =========================
+   TEMA GLOWTRACK (pink, di atas Bootstrap)
+   ========================= */
+:root {
+    --glow: #c76b8c;
+    --glow-dark: #a95172;
+    --glow-soft: #fbe8ef;
+
+    /* Mengubah warna primary bawaan Bootstrap menjadi pink */
+    --bs-primary: #c76b8c;
+    --bs-primary-rgb: 199, 107, 140;
+    --bs-link-color: #b45c7d;
+    --bs-link-hover-color: #a95172;
+}
+
+/* Matikan semua animasi & transisi */
+*, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+}
+
+/* Hilangkan shadow/glow saat tombol atau input diklik */
+.btn:focus,
+.btn:focus-visible,
+.btn:active:focus,
+.btn-check:focus + .btn,
+.form-control:focus,
+.form-select:focus,
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Mengatur warna latar belakang, warna teks, dan ukuran
+   teks dasar untuk seluruh halaman website */
+body {
+    background-color: #fff9fb;
+    color: #444;
+    font-size: 15px;
+}
+
+/* Class untuk memberikan warna teks pink utama */
+.text-glow      { color: var(--glow) !important; }
+/* Class untuk memberikan warna teks pink gelap */
+.text-glow-dark { color: var(--glow-dark) !important; }
+
+/* Tombol primary pink */
+.btn-primary {
+    --bs-btn-bg: #c76b8c;
+    --bs-btn-border-color: #c76b8c;
+    --bs-btn-hover-bg: #a95172;
+    --bs-btn-hover-border-color: #a95172;
+    --bs-btn-active-bg: #954765;
+    --bs-btn-active-border-color: #954765;
+}
+
+/* Fokus form: cukup ganti warna garis */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--glow);
+}
+
+/* Navbar */
+.navbar .nav-link.active {
+    font-weight: 700;
+}
+
+/* =========================
+   BERANDA
+   ========================= */
+   /* Mengatur banner utama dengan gradasi pink */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #c76b8c 0%, #e59ab5 100%);
+    box-shadow: 0 10px 30px rgba(199, 107, 140, 0.25);
+}
+
+/* Membuat lingkaran dekoratif transparan pada banner */
+.hero::after {
+    content: "";
+    position: absolute;
+    right: -60px;
+    top: -60px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Menempatkan isi banner di atas lingkaran dekoratif */
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Tombol di hero: putih polos, warnanya tidak berubah saat hover/klik */
+.btn-hero {
+    --bs-btn-color: #a95172;
+    --bs-btn-bg: #fff;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-color: #a95172;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-active-color: #a95172;
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: #fff;
+    font-weight: 600;
+}
+
+/* Kartu ringkasan */
+.stat-total { background: var(--glow-soft); }
+.stat-pagi  { background: #fff3cd; }
+.stat-malam { background: #e4e3fb; }
+
+/* Mengatur ukuran, ketebalan, warna, dan tinggi baris
+   angka statistik pada kartu ringkasan */
+.stat-number {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--glow-dark);
+    line-height: 1.1;
+}
+
+/* =========================
+   TABEL
+   ========================= */
+.table thead th {
+    background-color: #f8e3eb; /* Latar kepala tabel */
+    color: #954765;             /* Warna teks kepala tabel */
+    font-weight: 600;              
+    border: 0;                      /* Menghilangkan garis tepi */
+    white-space: nowrap;             /* Mencegah teks turun baris */
+}
+
+/* Membulatkan sudut kiri atas kepala tabel */
+.table thead th:first-child { border-top-left-radius: 8px; }
+.table thead th:last-child  { border-top-right-radius: 8px; } /* Membulatkan sudut kanan atas kepala tabel */ 
+
+/* Modal hapus */
+.modal-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #fde5e8;
+    color: #d9435b;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+.glow-footer {
+    background-color: #fff;
+    border-top: 1px solid #f0d5df;
+    color: #888;
+}
