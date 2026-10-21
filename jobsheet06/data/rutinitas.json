@@ -1,0 +1,8 @@
+[
+    { "produk": "Cleansing Oil", "kategori": "Cleanser", "waktu": "Malam", "urutan": 1, "catatan": "Pijat 1 menit untuk mengangkat makeup" },
+    { "produk": "Retinol Serum", "kategori": "Serum", "waktu": "Malam", "urutan": 3, "catatan": "Pakai 2-3 kali seminggu" },
+    { "produk": "Night Cream", "kategori": "Moisturizer", "waktu": "Malam", "urutan": 4, "catatan": "Oleskan tipis-tipis" },
+    { "produk": "Hydrating Toner", "kategori": "Toner", "waktu": "Pagi", "urutan": 2, "catatan": "Tepuk-tepuk lembut ke wajah" },
+    { "produk": "Vitamin C Serum", "kategori": "Serum", "waktu": "Pagi", "urutan": 3, "catatan": "Tunggu 1 menit sebelum lanjut" },
+    { "produk": "Sunscreen SPF 50", "kategori": "Sunscreen", "waktu": "Pagi", "urutan": 5, "catatan": "Ulangi setiap 3 jam" }
+]
