@@ -21,6 +21,7 @@ $base = $__rel === '' ? '' : str_repeat('../', substr_count($__rel, '/') + 1);
 // Menu yang sedang aktif (diisi oleh tiap halaman sebelum include header)
 $active_menu = $active_menu ?? '';
 ?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -42,7 +43,6 @@ $active_menu = $active_menu ?? '';
                     <li class="nav-item"><a class="nav-link<?php echo $active_menu === 'home' ? ' active' : ''; ?>" href="<?php echo $base; ?>index.php">Beranda</a></li>
                     <li class="nav-item"><a class="nav-link<?php echo $active_menu === 'daftar' ? ' active' : ''; ?>" href="<?php echo $base; ?>rutinitas/daftar.php">Daftar Rutinitas</a></li>
                     <?php if ($sudahLogin): ?>
-                    <li class="nav-item"><span class="navbar-text text-white me-2"><?php echo e($_SESSION['nama']); ?></span></li>
                     <li class="nav-item"><a class="nav-link" href="<?php echo $base; ?>auth/logout.php">Logout</a></li>
                     <?php else: ?>
                     <li class="nav-item"><a class="nav-link<?php echo $active_menu === 'login' ? ' active' : ''; ?>" href="<?php echo $base; ?>auth/login.php">Login</a></li>
