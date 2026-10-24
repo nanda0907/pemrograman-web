@@ -1,10 +1,10 @@
 <?php
 // Sesuaikan dengan environment lokal kamu
 $host = "localhost";
-$port = "5432";
-$db   = "glowtrack";
+$port = "5433";
+$db   = "db_glowtrack";
 $user = "postgres";
-$pass = "postgres";
+$pass = "12345678";
 
 try {
     $pdo = new PDO("pgsql:host=$host;port=$port;dbname=$db", $user, $pass);
